@@ -7,7 +7,13 @@
  * Pad the numbers to 8 characters to confirm that it works correctly
  *
  */
+ const leftPad = require('left-pad');
+ const padLeft = require('./padLeft.js');
 
+ 
 let numbers = [ "12", "846", "2", "1236" ];
 
 // YOUR CODE GOES HERE
+numbers = numbers.map(num => leftPad(num , 8 , '0'));
+
+ console.log(numbers);
