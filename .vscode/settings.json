@@ -4,5 +4,9 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "liveServer.settings.port": 5502
+  "liveServer.settings.port": 5502,
+  "cSpell.words": [
+    "dont",
+    "hackyourtemprature"
+  ]
 }
