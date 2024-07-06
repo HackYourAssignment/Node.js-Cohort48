@@ -7,7 +7,8 @@ package-lock.json
 yarn-error.log
 *.bkp
 
-assignments/hackyourtemperature/keys.js
+
+assignments/hackyourtemperature/sources/keys.js
 assignments/hackyourtemperature/node_modules
 
 week3/prep-exercise/server-demo/
