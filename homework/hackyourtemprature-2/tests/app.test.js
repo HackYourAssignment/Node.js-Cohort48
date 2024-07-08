@@ -3,13 +3,6 @@ import supertest from "supertest";
 
 const request = supertest(app);
 
-
-describe("POST /", () => {
-    it("Quick test", () => {
-        expect(1).toBe(1);
-    });
-});
-
 describe("POST /weather", () => {
     it("should return weather data for a valid city name", async () => {
         const response = await request.post("/weather").send({ cityName: "Amsterdam" });
