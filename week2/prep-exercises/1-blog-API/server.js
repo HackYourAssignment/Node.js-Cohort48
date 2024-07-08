@@ -16,7 +16,7 @@ app.post('/blogs', (req, res) => {
     return res.status(400).send('Title and content are required');
   }
   fs.writeFileSync(`${title}.txt`, content, 'utf8');
-  res.send('ok');
+  res.send('ok'); 
 });
 
 app.put('/posts/:title', (req, res) => {
