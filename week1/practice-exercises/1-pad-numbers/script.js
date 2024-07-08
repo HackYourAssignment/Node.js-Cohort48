@@ -1,3 +1,5 @@
+// const leftPad = require('left-pad');
+const padLeft = require("./padLeft.js");
 
 /**
  ** Exercise 1: Pad numbers 
@@ -19,3 +21,5 @@
 let numbers = [ "12", "846", "2", "1236" ];
 
 // YOUR CODE GOES HERE
+numbers = numbers.map(num => padLeft(num , 8 ,'0'));
+console.log(numbers);

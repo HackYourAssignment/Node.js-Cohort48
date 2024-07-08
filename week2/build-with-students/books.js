@@ -1,3 +1,5 @@
+// should install an other package from node in version 4 => npm install uuid@3.4.0
+
 const generateUUID = require('uuid/v4');
 
 let books = [{
