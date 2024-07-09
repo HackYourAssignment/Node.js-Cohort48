@@ -1,13 +1,18 @@
-import express from 'express';
-// TODO Use below import statement for importing middlewares from users.js for your routes
-// TODO import { ....... } from "./users.js";
+// prep-exercise/server/app.js
+const express = require('express');
+const { register, login, authenticateJWT, getProfile, logout } = require('./users');
 
 let app = express();
 
 app.use(express.json());
-// TODO: Create routes here, e.g. app.post("/register", .......)
 
-// Serve the front-end application from the `client` folder
+// Define routes
+app.post('/auth/register', register);
+app.post('/auth/login', login);
+app.get('/auth/profile', authenticateJWT, getProfile);
+app.post('/auth/logout', logout);
+
+// Serve the front-end application from the client folder
 app.use(express.static('client'));
 
 app.listen(3000, () => {
